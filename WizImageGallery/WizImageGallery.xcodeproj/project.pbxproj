@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		737B7E4515AD7C000022C3C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737B7E4415AD7C000022C3C2 /* UIKit.framework */; };
+		737B7E4715AD7C000022C3C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737B7E4615AD7C000022C3C2 /* Foundation.framework */; };
+		737B7E4915AD7C000022C3C2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737B7E4815AD7C000022C3C2 /* CoreGraphics.framework */; };
+		737B7E4F15AD7C000022C3C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 737B7E4D15AD7C000022C3C2 /* InfoPlist.strings */; };
+		737B7E5115AD7C000022C3C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 737B7E5015AD7C000022C3C2 /* main.m */; };
+		737B7E5515AD7C000022C3C2 /* WizAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 737B7E5415AD7C000022C3C2 /* WizAppDelegate.m */; };
+		737B7E5715AD7C000022C3C2 /* WizImageGallery.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 737B7E5615AD7C000022C3C2 /* WizImageGallery.entitlements */; };
+		737B7E5A15AD7C000022C3C2 /* WizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 737B7E5915AD7C000022C3C2 /* WizViewController.m */; };
+		737B7E5D15AD7C000022C3C2 /* WizViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 737B7E5B15AD7C000022C3C2 /* WizViewController_iPhone.xib */; };
+		737B7E6015AD7C000022C3C2 /* WizViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 737B7E5E15AD7C000022C3C2 /* WizViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		737B7E4015AD7C000022C3C2 /* WizImageGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WizImageGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		737B7E4415AD7C000022C3C2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		737B7E4615AD7C000022C3C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		737B7E4815AD7C000022C3C2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		737B7E4C15AD7C000022C3C2 /* WizImageGallery-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WizImageGallery-Info.plist"; sourceTree = "<group>"; };
+		737B7E4E15AD7C000022C3C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		737B7E5015AD7C000022C3C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		737B7E5215AD7C000022C3C2 /* WizImageGallery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WizImageGallery-Prefix.pch"; sourceTree = "<group>"; };
+		737B7E5315AD7C000022C3C2 /* WizAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WizAppDelegate.h; sourceTree = "<group>"; };
+		737B7E5415AD7C000022C3C2 /* WizAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WizAppDelegate.m; sourceTree = "<group>"; };
+		737B7E5615AD7C000022C3C2 /* WizImageGallery.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = WizImageGallery.entitlements; sourceTree = "<group>"; };
+		737B7E5815AD7C000022C3C2 /* WizViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WizViewController.h; sourceTree = "<group>"; };
+		737B7E5915AD7C000022C3C2 /* WizViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WizViewController.m; sourceTree = "<group>"; };
+		737B7E5C15AD7C000022C3C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WizViewController_iPhone.xib; sourceTree = "<group>"; };
+		737B7E5F15AD7C000022C3C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WizViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		737B7E3D15AD7C000022C3C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				737B7E4515AD7C000022C3C2 /* UIKit.framework in Frameworks */,
+				737B7E4715AD7C000022C3C2 /* Foundation.framework in Frameworks */,
+				737B7E4915AD7C000022C3C2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		737B7E3515AD7C000022C3C2 = {
+			isa = PBXGroup;
+			children = (
+				737B7E4A15AD7C000022C3C2 /* WizImageGallery */,
+				737B7E4315AD7C000022C3C2 /* Frameworks */,
+				737B7E4115AD7C000022C3C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		737B7E4115AD7C000022C3C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				737B7E4015AD7C000022C3C2 /* WizImageGallery.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		737B7E4315AD7C000022C3C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				737B7E4415AD7C000022C3C2 /* UIKit.framework */,
+				737B7E4615AD7C000022C3C2 /* Foundation.framework */,
+				737B7E4815AD7C000022C3C2 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		737B7E4A15AD7C000022C3C2 /* WizImageGallery */ = {
+			isa = PBXGroup;
+			children = (
+				737B7E5315AD7C000022C3C2 /* WizAppDelegate.h */,
+				737B7E5415AD7C000022C3C2 /* WizAppDelegate.m */,
+				737B7E5815AD7C000022C3C2 /* WizViewController.h */,
+				737B7E5915AD7C000022C3C2 /* WizViewController.m */,
+				737B7E5B15AD7C000022C3C2 /* WizViewController_iPhone.xib */,
+				737B7E5E15AD7C000022C3C2 /* WizViewController_iPad.xib */,
+				737B7E4B15AD7C000022C3C2 /* Supporting Files */,
+			);
+			path = WizImageGallery;
+			sourceTree = "<group>";
+		};
+		737B7E4B15AD7C000022C3C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				737B7E4C15AD7C000022C3C2 /* WizImageGallery-Info.plist */,
+				737B7E4D15AD7C000022C3C2 /* InfoPlist.strings */,
+				737B7E5015AD7C000022C3C2 /* main.m */,
+				737B7E5215AD7C000022C3C2 /* WizImageGallery-Prefix.pch */,
+				737B7E5615AD7C000022C3C2 /* WizImageGallery.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		737B7E3F15AD7C000022C3C2 /* WizImageGallery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 737B7E6315AD7C000022C3C2 /* Build configuration list for PBXNativeTarget "WizImageGallery" */;
+			buildPhases = (
+				737B7E3C15AD7C000022C3C2 /* Sources */,
+				737B7E3D15AD7C000022C3C2 /* Frameworks */,
+				737B7E3E15AD7C000022C3C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WizImageGallery;
+			productName = WizImageGallery;
+			productReference = 737B7E4015AD7C000022C3C2 /* WizImageGallery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		737B7E3715AD7C000022C3C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Wiz;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = wiz.cn;
+			};
+			buildConfigurationList = 737B7E3A15AD7C000022C3C2 /* Build configuration list for PBXProject "WizImageGallery" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 737B7E3515AD7C000022C3C2;
+			productRefGroup = 737B7E4115AD7C000022C3C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				737B7E3F15AD7C000022C3C2 /* WizImageGallery */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		737B7E3E15AD7C000022C3C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				737B7E4F15AD7C000022C3C2 /* InfoPlist.strings in Resources */,
+				737B7E5715AD7C000022C3C2 /* WizImageGallery.entitlements in Resources */,
+				737B7E5D15AD7C000022C3C2 /* WizViewController_iPhone.xib in Resources */,
+				737B7E6015AD7C000022C3C2 /* WizViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		737B7E3C15AD7C000022C3C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				737B7E5115AD7C000022C3C2 /* main.m in Sources */,
+				737B7E5515AD7C000022C3C2 /* WizAppDelegate.m in Sources */,
+				737B7E5A15AD7C000022C3C2 /* WizViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		737B7E4D15AD7C000022C3C2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				737B7E4E15AD7C000022C3C2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		737B7E5B15AD7C000022C3C2 /* WizViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				737B7E5C15AD7C000022C3C2 /* en */,
+			);
+			name = WizViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		737B7E5E15AD7C000022C3C2 /* WizViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				737B7E5F15AD7C000022C3C2 /* en */,
+			);
+			name = WizViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		737B7E6115AD7C000022C3C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		737B7E6215AD7C000022C3C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		737B7E6415AD7C000022C3C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WizImageGallery/WizImageGallery.entitlements;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WizImageGallery/WizImageGallery-Prefix.pch";
+				INFOPLIST_FILE = "WizImageGallery/WizImageGallery-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		737B7E6515AD7C000022C3C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WizImageGallery/WizImageGallery.entitlements;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WizImageGallery/WizImageGallery-Prefix.pch";
+				INFOPLIST_FILE = "WizImageGallery/WizImageGallery-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		737B7E3A15AD7C000022C3C2 /* Build configuration list for PBXProject "WizImageGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				737B7E6115AD7C000022C3C2 /* Debug */,
+				737B7E6215AD7C000022C3C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		737B7E6315AD7C000022C3C2 /* Build configuration list for PBXNativeTarget "WizImageGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				737B7E6415AD7C000022C3C2 /* Debug */,
+				737B7E6515AD7C000022C3C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 737B7E3715AD7C000022C3C2 /* Project object */;
+}
