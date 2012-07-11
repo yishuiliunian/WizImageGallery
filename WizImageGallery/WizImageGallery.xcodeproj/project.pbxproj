@@ -17,6 +17,7 @@
 		737B7E5A15AD7C000022C3C2 /* WizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 737B7E5915AD7C000022C3C2 /* WizViewController.m */; };
 		737B7E5D15AD7C000022C3C2 /* WizViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 737B7E5B15AD7C000022C3C2 /* WizViewController_iPhone.xib */; };
 		737B7E6015AD7C000022C3C2 /* WizViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 737B7E5E15AD7C000022C3C2 /* WizViewController_iPad.xib */; };
+		737B7E6815AD7C890022C3C2 /* WizImageGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 737B7E6715AD7C890022C3C2 /* WizImageGalleryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		737B7E5915AD7C000022C3C2 /* WizViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WizViewController.m; sourceTree = "<group>"; };
 		737B7E5C15AD7C000022C3C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WizViewController_iPhone.xib; sourceTree = "<group>"; };
 		737B7E5F15AD7C000022C3C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WizViewController_iPad.xib; sourceTree = "<group>"; };
+		737B7E6615AD7C890022C3C2 /* WizImageGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WizImageGalleryViewController.h; path = ImageGallery/WizImageGalleryViewController.h; sourceTree = "<group>"; };
+		737B7E6715AD7C890022C3C2 /* WizImageGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WizImageGalleryViewController.m; path = ImageGallery/WizImageGalleryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				737B7E5B15AD7C000022C3C2 /* WizViewController_iPhone.xib */,
 				737B7E5E15AD7C000022C3C2 /* WizViewController_iPad.xib */,
 				737B7E4B15AD7C000022C3C2 /* Supporting Files */,
+				737B7E6615AD7C890022C3C2 /* WizImageGalleryViewController.h */,
+				737B7E6715AD7C890022C3C2 /* WizImageGalleryViewController.m */,
 			);
 			path = WizImageGallery;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 				737B7E5115AD7C000022C3C2 /* main.m in Sources */,
 				737B7E5515AD7C000022C3C2 /* WizAppDelegate.m in Sources */,
 				737B7E5A15AD7C000022C3C2 /* WizViewController.m in Sources */,
+				737B7E6815AD7C890022C3C2 /* WizImageGalleryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

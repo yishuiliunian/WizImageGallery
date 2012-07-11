@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class WizViewController;
+@class WizImageGalleryViewController;
 
 @interface WizAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) WizViewController *viewController;
+@property (strong, nonatomic) WizImageGalleryViewController *viewController;
 
 @end

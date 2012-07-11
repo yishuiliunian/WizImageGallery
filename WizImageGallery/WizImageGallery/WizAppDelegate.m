@@ -9,7 +9,7 @@
 #import "WizAppDelegate.h"
 
 #import "WizViewController.h"
-
+#import "WizImageGalleryViewController.h"
 @implementation WizAppDelegate
 
 - (void)dealloc
@@ -24,9 +24,8 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[[WizViewController alloc] initWithNibName:@"WizViewController_iPhone" bundle:nil] autorelease];
+        self.viewController = [[[WizImageGalleryViewController alloc] init] autorelease];
     } else {
-        self.viewController = [[[WizViewController alloc] initWithNibName:@"WizViewController_iPad" bundle:nil] autorelease];
     }
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
