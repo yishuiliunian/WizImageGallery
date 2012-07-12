@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		736FB8F815AD8D57004C5A7C /* WizImageGalleryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 736FB8F715AD8D57004C5A7C /* WizImageGalleryView.m */; };
 		737B7E4515AD7C000022C3C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737B7E4415AD7C000022C3C2 /* UIKit.framework */; };
 		737B7E4715AD7C000022C3C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737B7E4615AD7C000022C3C2 /* Foundation.framework */; };
 		737B7E4915AD7C000022C3C2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737B7E4815AD7C000022C3C2 /* CoreGraphics.framework */; };
@@ -18,9 +19,17 @@
 		737B7E5D15AD7C000022C3C2 /* WizViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 737B7E5B15AD7C000022C3C2 /* WizViewController_iPhone.xib */; };
 		737B7E6015AD7C000022C3C2 /* WizViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 737B7E5E15AD7C000022C3C2 /* WizViewController_iPad.xib */; };
 		737B7E6815AD7C890022C3C2 /* WizImageGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 737B7E6715AD7C890022C3C2 /* WizImageGalleryViewController.m */; };
+		73A98CB115AE7B05003A9A42 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73A98CAB15AE7B05003A9A42 /* 1.jpg */; };
+		73A98CB215AE7B05003A9A42 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A98CAC15AE7B05003A9A42 /* 2.png */; };
+		73A98CB315AE7B05003A9A42 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A98CAD15AE7B05003A9A42 /* 3.png */; };
+		73A98CB415AE7B05003A9A42 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A98CAE15AE7B05003A9A42 /* 4.png */; };
+		73A98CB515AE7B05003A9A42 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A98CAF15AE7B05003A9A42 /* 0.png */; };
+		73A98CB615AE7B05003A9A42 /* loginButtonBackgroud1.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A98CB015AE7B05003A9A42 /* loginButtonBackgroud1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		736FB8F615AD8D57004C5A7C /* WizImageGalleryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizImageGalleryView.h; sourceTree = "<group>"; };
+		736FB8F715AD8D57004C5A7C /* WizImageGalleryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizImageGalleryView.m; sourceTree = "<group>"; };
 		737B7E4015AD7C000022C3C2 /* WizImageGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WizImageGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		737B7E4415AD7C000022C3C2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		737B7E4615AD7C000022C3C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -38,6 +47,12 @@
 		737B7E5F15AD7C000022C3C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WizViewController_iPad.xib; sourceTree = "<group>"; };
 		737B7E6615AD7C890022C3C2 /* WizImageGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WizImageGalleryViewController.h; path = ImageGallery/WizImageGalleryViewController.h; sourceTree = "<group>"; };
 		737B7E6715AD7C890022C3C2 /* WizImageGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WizImageGalleryViewController.m; path = ImageGallery/WizImageGalleryViewController.m; sourceTree = "<group>"; };
+		73A98CAB15AE7B05003A9A42 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		73A98CAC15AE7B05003A9A42 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		73A98CAD15AE7B05003A9A42 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		73A98CAE15AE7B05003A9A42 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		73A98CAF15AE7B05003A9A42 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		73A98CB015AE7B05003A9A42 /* loginButtonBackgroud1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginButtonBackgroud1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +99,12 @@
 		737B7E4A15AD7C000022C3C2 /* WizImageGallery */ = {
 			isa = PBXGroup;
 			children = (
+				73A98CAB15AE7B05003A9A42 /* 1.jpg */,
+				73A98CAC15AE7B05003A9A42 /* 2.png */,
+				73A98CAD15AE7B05003A9A42 /* 3.png */,
+				73A98CAE15AE7B05003A9A42 /* 4.png */,
+				73A98CAF15AE7B05003A9A42 /* 0.png */,
+				73A98CB015AE7B05003A9A42 /* loginButtonBackgroud1.png */,
 				737B7E5315AD7C000022C3C2 /* WizAppDelegate.h */,
 				737B7E5415AD7C000022C3C2 /* WizAppDelegate.m */,
 				737B7E5815AD7C000022C3C2 /* WizViewController.h */,
@@ -93,6 +114,8 @@
 				737B7E4B15AD7C000022C3C2 /* Supporting Files */,
 				737B7E6615AD7C890022C3C2 /* WizImageGalleryViewController.h */,
 				737B7E6715AD7C890022C3C2 /* WizImageGalleryViewController.m */,
+				736FB8F615AD8D57004C5A7C /* WizImageGalleryView.h */,
+				736FB8F715AD8D57004C5A7C /* WizImageGalleryView.m */,
 			);
 			path = WizImageGallery;
 			sourceTree = "<group>";
@@ -165,6 +188,12 @@
 				737B7E5715AD7C000022C3C2 /* WizImageGallery.entitlements in Resources */,
 				737B7E5D15AD7C000022C3C2 /* WizViewController_iPhone.xib in Resources */,
 				737B7E6015AD7C000022C3C2 /* WizViewController_iPad.xib in Resources */,
+				73A98CB115AE7B05003A9A42 /* 1.jpg in Resources */,
+				73A98CB215AE7B05003A9A42 /* 2.png in Resources */,
+				73A98CB315AE7B05003A9A42 /* 3.png in Resources */,
+				73A98CB415AE7B05003A9A42 /* 4.png in Resources */,
+				73A98CB515AE7B05003A9A42 /* 0.png in Resources */,
+				73A98CB615AE7B05003A9A42 /* loginButtonBackgroud1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +208,7 @@
 				737B7E5515AD7C000022C3C2 /* WizAppDelegate.m in Sources */,
 				737B7E5A15AD7C000022C3C2 /* WizViewController.m in Sources */,
 				737B7E6815AD7C890022C3C2 /* WizImageGalleryViewController.m in Sources */,
+				736FB8F815AD8D57004C5A7C /* WizImageGalleryView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +334,7 @@
 				737B7E6515AD7C000022C3C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,89 +7,46 @@
 //
 
 #import "WizImageGalleryViewController.h"
-#define WizImageGalleryImageViewCount   3
 
 @interface WizImageGalleryViewController ()<UIScrollViewDelegate>
 {
     UIScrollView* contentScrollView;
     
-    NSArray* imageViews;
+    
 }
-@property (nonatomic, retain) NSArray* imageViews;
 @end
 
 @implementation WizImageGalleryViewController
-@synthesize imageViews;
-@synthesize sourceDelegate;
-
+@synthesize imageGalleryView;
 - (void) dealloc
 {
-    sourceDelegate = nil;
-    [imageViews release];
-    [contentScrollView release];
+    [imageGalleryView release];
+    imageGalleryView = nil;
+    //
     [super dealloc];
 }
-- (void) buildImageViews
-{
-    NSMutableArray* array = [NSMutableArray arrayWithCapacity:WizImageGalleryImageViewCount];
-    for (int i=0; i<WizImageGalleryImageViewCount; i++) {
-        UIImageView* imageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.view.frame.size.width*i, 0.0, self.view.frame.size.width, self.view.frame.size.height)];
-        [array addObject:imageView];
-        [contentScrollView addSubview:imageView];
-        
-        
-        //
-        switch (i) {
-            case 0:
-                imageView.backgroundColor = [UIColor redColor];
-                break;
-            case 1:
-                imageView.backgroundColor = [UIColor lightGrayColor];
-                break;
-            case 2:
-                imageView.backgroundColor = [UIColor blueColor];
-                break;
-                
-            default:
-                break;
-        }
-        
-        //
-        [imageView release];
-    }
-    self.imageViews = array;
-}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent animated:YES];
-        contentScrollView = [[UIScrollView alloc] initWithFrame:CGRectZero];
-        contentScrollView.delegate = self;
-        contentScrollView.pagingEnabled = YES;
-        contentScrollView.showsHorizontalScrollIndicator = NO;
-        contentScrollView.showsVerticalScrollIndicator = NO;
+        imageGalleryView = [[WizImageGalleryView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        imageGalleryView.sourceDelegate = self;
+        //
     }
     return self;
 }
-- (void) reloadData
-{
-    [self buildImageViews];
-    contentScrollView.contentSize = CGSizeMake(self.view.frame.size.width*3, self.view.frame.size.height);
-}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //
-    contentScrollView.frame = self.view.frame;
-    [self.view addSubview:contentScrollView];
+    [self.view addSubview:imageGalleryView];
 	// Do any additional setup after loading the view.
 }
 
 - (void) viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self reloadData];
 }
 - (void)viewDidUnload
 {
@@ -102,4 +59,13 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (NSInteger) numberOfImagesInImageGallery:(WizImageGalleryView *)imageGallery
+{
+    return 5;
+}
+
+- (UIImage*) imageSourceUrlForItem:(NSInteger)index inImageGallery:(WizImageGalleryView *)imageGallery
+{
+    return [UIImage imageNamed:[NSString stringWithFormat:@"%d",index]];
+}
 @end

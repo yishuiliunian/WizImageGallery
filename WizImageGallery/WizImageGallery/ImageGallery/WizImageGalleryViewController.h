@@ -7,16 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-@protocol WizImageGallerySourceDelegate;
-@interface WizImageGalleryViewController : UIViewController
+#import "WizImageGalleryView.h"
+@interface WizImageGalleryViewController : UIViewController<WizImageGallerySourceDelegate>
 {
-   id<WizImageGallerySourceDelegate> sourceDelegate;
+    WizImageGalleryView* imageGalleryView;
 }
-@property (nonatomic, assign) id<WizImageGallerySourceDelegate> sourceDelegate;
+@property (nonatomic, retain) WizImageGalleryView* imageGalleryView;
 @end
 
-@protocol WizImageGallerySourceDelegate <NSObject>
-
-- (NSInteger) numberOfImagesInImageGallery:(WizImageGalleryViewController*)imageGallery;
-- (NSURL*) imageSourceUrlForItem:(NSInteger)index  inImageGallery:(WizImageGalleryViewController*)imageGallery;
-@end
