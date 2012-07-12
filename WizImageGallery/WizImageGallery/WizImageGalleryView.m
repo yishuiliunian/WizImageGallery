@@ -7,6 +7,9 @@
 //
 
 #import "WizImageGalleryView.h"
+
+#import "WizImageGalleryCell.h"
+
 #define WizImageGalleryImageViewCount   3
 
 @interface WizImageGalleryView() <UIScrollViewDelegate>
@@ -38,29 +41,9 @@
     }
     NSMutableArray* array = [NSMutableArray arrayWithCapacity:numberOfImages];
     for (int i=0; i<numberOfImages; i++) {
-        UIImageView* imageView = [[UIImageView alloc] initWithFrame:CGRectMake(imageViewSize.width*i, 0.0, imageViewSize.width, imageViewSize.height)];
+        WizImageGalleryCell* imageView = [[WizImageGalleryCell alloc] initWithFrame:CGRectMake(imageViewSize.width*i, 0.0, imageViewSize.width, imageViewSize.height)];
         [array addObject:imageView];
         [self addSubview:imageView];
-        
-        
-        //
-        NSInteger k = i%3;
-        switch (k) {
-            case 0:
-                imageView.backgroundColor = [UIColor redColor];
-                break;
-            case 1:
-                imageView.backgroundColor = [UIColor lightGrayColor];
-                break;
-            case 2:
-                imageView.backgroundColor = [UIColor blueColor];
-                break;
-                
-            default:
-                break;
-        }
-        
-        //
         [imageView release];
     }
     self.imageViews = array;
@@ -97,8 +80,8 @@
         index = numberOfImages;
     }
     UIImage* image = [self.sourceDelegate imageSourceUrlForItem:index  inImageGallery:self];
-    UIImageView* imageView = [imageViews objectAtIndex:index];
-    imageView.image = image;
+    WizImageGalleryCell* imageView = [imageViews objectAtIndex:index];
+    imageView.imageView.image = image;
 }
 
 - (NSInteger) theImageIndexForOffset:(CGPoint)offSet
@@ -129,8 +112,13 @@
     isScrolling_ = NO;
     currentIndexOfImage = [self theImageIndexForOffset:self.contentOffset];
     UIImage* image = [self.sourceDelegate imageSourceUrlForItem:currentIndexOfImage  inImageGallery:self];
-    UIImageView* imageView = [imageViews objectAtIndex:currentIndexOfImage];
-    imageView.image = image;
+    WizImageGalleryCell* imageView = [imageViews objectAtIndex:currentIndexOfImage];
+    
+//    CGPoint currentAncor = CGPointMake(imageViewSize.width*currentIndexOfImage, 0.0);
+//    CGFloat imageViewWidth = image.size.width > imageViewSize.width ? imageViewSize.width:image.size.width;
+//    CGFloat imageViewHeight = image.size.height > imageViewSize.height ? imageViewSize.height:image.size.height;
+//    imageView.frame = CGRectMake(currentAncor.x + (imageViewSize.width - imageViewWidth)/2, (imageViewSize.height - imageViewHeight)/2, imageViewWidth, imageViewHeight);
+    imageView.imageView.image = image;
 }
 
 - (void) scrollViewDidEndDecelerating:(UIScrollView *)scrollView
@@ -143,8 +131,6 @@
     isScrolling_ = YES;
     CGPoint currentOffSet = scrollView.contentOffset;
     NSInteger willShowIndex = [self theImageIndexForOffset:currentOffSet];
-    
-    NSLog(@"will showIndex %d",willShowIndex);
     
 }
 - (void)drawRect:(CGRect)rect

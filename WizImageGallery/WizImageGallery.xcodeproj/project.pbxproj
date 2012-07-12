@@ -25,6 +25,7 @@
 		73A98CB415AE7B05003A9A42 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A98CAE15AE7B05003A9A42 /* 4.png */; };
 		73A98CB515AE7B05003A9A42 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A98CAF15AE7B05003A9A42 /* 0.png */; };
 		73A98CB615AE7B05003A9A42 /* loginButtonBackgroud1.png in Resources */ = {isa = PBXBuildFile; fileRef = 73A98CB015AE7B05003A9A42 /* loginButtonBackgroud1.png */; };
+		73A98CBA15AE83D9003A9A42 /* WizImageGalleryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A98CB915AE83D9003A9A42 /* WizImageGalleryCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,8 @@
 		73A98CAE15AE7B05003A9A42 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		73A98CAF15AE7B05003A9A42 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
 		73A98CB015AE7B05003A9A42 /* loginButtonBackgroud1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginButtonBackgroud1.png; sourceTree = "<group>"; };
+		73A98CB815AE83D9003A9A42 /* WizImageGalleryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizImageGalleryCell.h; sourceTree = "<group>"; };
+		73A98CB915AE83D9003A9A42 /* WizImageGalleryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizImageGalleryCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 				737B7E6715AD7C890022C3C2 /* WizImageGalleryViewController.m */,
 				736FB8F615AD8D57004C5A7C /* WizImageGalleryView.h */,
 				736FB8F715AD8D57004C5A7C /* WizImageGalleryView.m */,
+				73A98CB815AE83D9003A9A42 /* WizImageGalleryCell.h */,
+				73A98CB915AE83D9003A9A42 /* WizImageGalleryCell.m */,
 			);
 			path = WizImageGallery;
 			sourceTree = "<group>";
@@ -209,6 +214,7 @@
 				737B7E5A15AD7C000022C3C2 /* WizViewController.m in Sources */,
 				737B7E6815AD7C890022C3C2 /* WizImageGalleryViewController.m in Sources */,
 				736FB8F815AD8D57004C5A7C /* WizImageGalleryView.m in Sources */,
+				73A98CBA15AE83D9003A9A42 /* WizImageGalleryCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

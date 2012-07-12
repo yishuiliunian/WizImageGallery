@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface WizImageGalleryCell : UIScrollView
-
+{
+    UIImageView* imageView;
+}
+@property (nonatomic, readonly) UIImageView* imageView;
 @end
